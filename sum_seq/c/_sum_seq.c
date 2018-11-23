@@ -39,7 +39,6 @@ static PyObject *sum_seq_sum_seq(PyObject *self, PyObject *args){
     value = sum_seq(n);
     Py_END_ALLOW_THREADS
 
-    /* Build the output tuple */
     PyObject *ret = Py_BuildValue("K", value);
     return ret;
 }
